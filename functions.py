@@ -42,7 +42,8 @@ def keyword_check(user_str):
 def type_check(inp_data):
 
     dict_type = {
-        'int': 'число',
+        'int': 'целое число',
+        'float': 'число',
         'str': 'строка',
         'bool': 'булевый',
         'NoneType': 'ничего ¯\\_(ツ)_/¯ ',
