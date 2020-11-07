@@ -21,12 +21,12 @@ if __name__ == '__main__':
     min_val = 0
     max_val = 1000000
     user_err = False
-    user_try = '\nПривет, сыграем в игру? (и тогда я скажу как выйти)'
+    user_try = '\nПривет, сыграем в игру?'
     count_try = 2
     rand_num = random.randint(min_val, max_val)
     kaom = '(-_-)'
 
-    # print(rand_num)
+    print(rand_num)
 
     while True:
         
@@ -40,7 +40,6 @@ if __name__ == '__main__':
 
         if user_num == rand_num:
             print('Ты угадал! Как ты это сделал? Теперь ты можешь выйти!')
-            input('Для выхода введи "exit" или нажми "enter": ')
             print('exit \n')
             break
         elif user_num == 'exit' or user_num == '':
@@ -59,5 +58,5 @@ if __name__ == '__main__':
         count_try += 1 
         user_err = False
 
-        if count_try > 9:
+        if count_try > 4:
             kaom = '(x_x)'
